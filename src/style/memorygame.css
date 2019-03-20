@@ -57,8 +57,10 @@
     height:40px;
     width:400px;
     margin-top:20px;
-    background: rgb(182, 179, 179);
-    border:1px solid rgb(82, 75, 75);
+   /* background: rgb(182, 179, 179);
+    border:1px solid rgb(82, 75, 75);*/
+    border: none;
+    background: none;
     font-size: 20px;
     font-weight: bold;
   
