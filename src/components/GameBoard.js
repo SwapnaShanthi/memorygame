@@ -16,7 +16,7 @@ class GameBoard extends Component {
 
     const display = this.state.TileArray.map((item,index)=>{
         
-       return(<div key={index}>{this.state.TileArray[index].map((tile,itemIndex)=>{
+       return(<div className="tilediv" key={index}>{this.state.TileArray[index].map((tile,itemIndex)=>{
        
                 return <div key={tile.number} className="tilediv"><Tile  tileArray={this.props.TileArray} tilenumber={tile.number} changeTileStatus={this.props.changeTileStatus}/></div>
 

@@ -10,9 +10,9 @@ class MemoryGame extends Component {
      this.clickCount=0;
      this.isWaiting=false;
      this.boardStatus="Start Game";
-     this.tileArray=[[{isLocked:false,number:1,color:"grey", onClickColor:"red"},{isLocked:false,number:2,color:"grey", onClickColor:"green"},{isLocked:false,number:3,color:"grey", onClickColor:"yellow"},{isLocked:false,number:4,color:"grey", onClickColor:"pink"}],
-                     [{isLocked:false,number:5,color:"grey", onClickColor:"yellow"},{isLocked:false,number:6,color:"grey", onClickColor:"red"},{isLocked:false,number:7,color:"grey", onClickColor:"blue"},{isLocked:false,number:8,color:"grey", onClickColor:"purple"}],
-                     [{isLocked:false,number:9,color:"grey",onClickColor:"pink"},{isLocked:false,number:10,color:"grey",onClickColor:"purple"},{isLocked:false,number:11,color:"grey",onClickColor:"green"},{isLocked:false,number:12,color:"grey",onClickColor:"blue"}]];
+     this.tileArray=[[{isLocked:true,number:1,color:"grey", onClickColor:"red"},{isLocked:true,number:2,color:"grey", onClickColor:"green"},{isLocked:true,number:3,color:"grey", onClickColor:"yellow"},{isLocked:true,number:4,color:"grey", onClickColor:"pink"}],
+                     [{isLocked:true,number:5,color:"grey", onClickColor:"yellow"},{isLocked:true,number:6,color:"grey", onClickColor:"red"},{isLocked:true,number:7,color:"grey", onClickColor:"blue"},{isLocked:true,number:8,color:"grey", onClickColor:"purple"}],
+                     [{isLocked:true,number:9,color:"grey",onClickColor:"pink"},{isLocked:true,number:10,color:"grey",onClickColor:"purple"},{isLocked:true,number:11,color:"grey",onClickColor:"green"},{isLocked:true,number:12,color:"grey",onClickColor:"blue"}]];
      this.state={TileArray:this.tileArray,
                  ClickCount:this.clickCount,
                  PreviousTileClicked:this.previousTileClicked,
@@ -154,7 +154,7 @@ class MemoryGame extends Component {
 
         <div>
           <div className="headerdiv">Memory Game</div>
-          <GameBoard TileArray={this.state.TileArray} changeTileStatus={this.changeTileStatus}/>
+          <GameBoard TileArray={this.state.TileArray} changeTileStatus={this.changeTileStatus} boardStatus={this.boardStatus}/>
           <GameStatus TileArray={this.state.TileArray} resetBoard={this.resetBoard} previousTileClicked={this.state.previousTileClicked} BoardStatus={this.boardStatus}/>
 
         </div>
