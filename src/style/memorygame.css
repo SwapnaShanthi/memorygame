@@ -1,0 +1,76 @@
+.grey{
+  height:100px;
+  width:100px;
+  background: rgb(182, 179, 179);
+  border:1px solid rgb(82, 75, 75);
+
+
+}
+.tilediv{
+
+    display :inline-block;
+
+}
+.red{
+
+  height:100px;
+  width:100px;
+  background: rgb(187, 58, 58);
+  border:1px solid grey;
+}
+
+.green{
+  height:100px;
+  width:100px;
+  background: rgb(18, 112, 81);
+  border:1px solid grey;
+}
+
+.yellow{
+    height:100px;
+    width:100px;
+    background: rgb(218, 221, 58);
+    border:1px solid grey;
+}
+
+.blue{
+    height:100px;
+    width:100px;
+    background: rgb(13, 155, 211);
+    border:1px solid grey;
+}
+
+.purple{
+    height:100px;
+    width:100px;
+    background: rgb(106, 106, 172);
+    border:1px solid grey;
+}
+
+.pink{
+    height:100px;
+    width:100px;
+    background: rgb(163, 37, 142);
+    border:1px solid grey;
+}
+.gamestatus{
+    height:40px;
+    width:400px;
+    margin-top:20px;
+    background: rgb(182, 179, 179);
+    border:1px solid rgb(82, 75, 75);
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+.headerdiv{
+    height:40px;
+    width:400px;
+    margin-left:150px;
+    padding:20px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top:20px;
+
+}
